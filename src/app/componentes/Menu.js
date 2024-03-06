@@ -5,14 +5,15 @@ import Image from "next/image";
 export default function Menu(){
     return(
         <header className={styles.cabecalho}>
-            <Image
+            <Imagem
             width={100}
             height={100}
             src={"https://www.ifms.edu.br/marcaifms.png"}/>
             <h1>Menu</h1>
             <nav>
-                <ul>
-                    <Link href="/">
+                <ul className={styles.lista}>
+                    <Link href
+                    ="/">
                     <li>Home</li>
                 </Link>
                 <Link href="/registro">
